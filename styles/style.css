@@ -1,0 +1,24 @@
+/* Fonts */
+@font-face {
+  font-family: "Amazon Ember";
+  font-weight: 200;
+  src: url(../assets/fonts/Dv1WQ5DdeMS5qP7.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Amazon Ember";
+  font-weight: 400;
+  src: url(../assets/fonts/pDxWAF1pBB0dzGB.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Amazon Ember";
+  font-style: italic;
+  src: url(../assets/fonts/WOnTLzkiaEccV7F.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Amazon Ember";
+  font-weight: 700;
+  src: url(../assets/fonts/Dv1WQ5DdeMS5qP7.woff2) format("woff2");
+}
+/* Colors */
