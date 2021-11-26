@@ -1,11 +1,6 @@
 /* Fonts */
 @font-face {
   font-family: "Amazon Ember";
-  font-weight: 200;
-  src: url(../assets/fonts/Dv1WQ5DdeMS5qP7.woff2) format("woff2");
-}
-@font-face {
-  font-family: "Amazon Ember";
   font-weight: 400;
   src: url(../assets/fonts/pDxWAF1pBB0dzGB.woff2) format("woff2");
 }
@@ -22,3 +17,389 @@
   src: url(../assets/fonts/Dv1WQ5DdeMS5qP7.woff2) format("woff2");
 }
 /* Colors */
+
+:root {
+  --main-header: #0f1111;
+  --main-nav: #232f3e;
+  --light-text-color: #ffffff;
+  --gray-text-color: #cccccc;
+  --orange-text: #f08804;
+  --gray-link: #565959;
+  --gray: #565959;
+  --dark-red: #b12704;
+
+  /* --background-color: #fbedf9;
+  --red-background: #e34140;
+  --black: #1d1d1f;
+  --white: #f5f5f7;
+  --pink: #fec2eb;
+  --gray: #f5f5f7;
+  --orange: #bf4800;
+  --link-color: #06c;
+  --gray-text: #6e6e73;
+  --footer-link-color: #424245;
+  --light-gray-color: #d2d2d7; */
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Elements */
+html {
+  font-size: 62.5%; /* font-size 1em = 10px on default browser settings */
+}
+
+body {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 1.4rem;
+}
+
+header,
+section {
+}
+
+hr {
+  /* border: none;
+  height: 0.1rem;
+  background-color: var(--light-gray-color);
+  margin: 1vh 0; */
+}
+
+/* General */
+.orange {
+  color: var(--orange-text);
+}
+
+.gray {
+  color: var(--gray);
+}
+.dark-red {
+  color: var(--dark-red);
+}
+
+.small-margin {
+  margin: 0.5rem 0;
+}
+
+.medium-margin {
+  margin: 1rem 0;
+}
+
+.big-margin {
+  margin: 1.5rem 0;
+}
+
+.left-margin {
+  margin-left: 5rem;
+}
+
+/* Headers */
+/* .section-title {
+  text-align: center;
+  font-size: 5.6rem;
+  letter-spacing: 0;
+  font-weight: 600;
+  letter-spacing: -0.2rem;
+} */
+/* 
+.section-secondary-title {
+  font-size: 2.8rem;
+  font-weight: 400;
+} */
+
+/* Links */
+/* unvisited link */
+/* .main-link:link {
+  color: var(--link-color);
+  font-size: 2.1rem;
+  text-decoration: none;
+} */
+
+/* visited link */
+/* .main-link:visited {
+  color: var(--link-color);
+} */
+
+/* mouse over link */
+/* .main-link:hover {
+  color: var(--link-color);
+  text-decoration: underline;
+} */
+
+/* selected link */
+/* .main-link:active {
+  color: var(--link-color);
+} */
+
+/* .main-link {
+  position: relative;
+} */
+
+/* .main-link:after {
+  border-right: 0.2rem solid var(--link-color);
+  border-bottom: 0.2rem solid var(--link-color);
+  content: "";
+  position: absolute;
+  width: 0.7rem;
+  height: 0.7rem;
+  top: 37%;
+} */
+
+/* .main-link:after {
+  right: -1.6rem;
+  transform: rotate(-45deg);
+} */
+
+/*  Navigation */
+
+/* .main-nav {
+  background-color: var(--nav-color);
+  font-size: 1.2rem;
+  height: 44px;
+  line-height: 44px;
+  z-index: 1;
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+} */
+
+/* unvisited link */
+.main-nav a:link {
+  color: var(--light-text-color);
+  text-decoration: none;
+  padding: 0 1rem;
+  margin: 0 1rem;
+  font-size: 1.4rem;
+  display: inline-block;
+}
+
+/* visited link */
+.main-nav a:visited {
+  color: var(--light-text-color);
+}
+
+/* mouse over link */
+/* .main-nav a:hover {
+  color: var(--white);
+} */
+
+/* .main-nav span {
+  display: inline-block;
+  padding: 0 0.2rem;
+}
+
+.main-nav img {
+  overflow: hidden;
+  height: auto;
+  object-position: bottom;
+}
+
+.main-nav img {
+  filter: contrast(50%);
+}
+
+.main-nav img:hover {
+  filter: none;
+} */
+
+/* Header */
+.homepage-header {
+  color: var(--light-text-color);
+}
+
+.homepage-header .main-header {
+  background-color: var(--main-header);
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.homepage-header .main-nav {
+  background-color: var(--main-nav);
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+}
+.logo {
+  background-image: url("../assets/img/nav-sprite.png");
+  height: 29px;
+  width: 96px;
+  background-position: -10px -51px;
+}
+
+.deliver-to-container {
+}
+
+.loaction-icon {
+  background-position: -70px -377px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../assets/img/nav-sprite.png");
+  display: inline-block;
+}
+.header-text-title-container {
+  display: inline-block;
+}
+
+.header-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.header-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--gray-text-color);
+}
+
+.header-search-container {
+  /* flex-grow: 1; */
+}
+
+.search-input {
+  width: 80%;
+}
+
+.main-nav a:link {
+  color: var(--light-text-color);
+  /* text-decoration: none;
+  padding: 0 1rem;
+  margin: 0 1rem;
+  display: inline-block; */
+}
+
+.homepage-header .main-header,
+.homepage-header .main-nav {
+  /* display: flex; */
+}
+
+.header-departments {
+  display: inline-block;
+  max-width: max-content;
+}
+
+.cart-icon {
+  background-image: url("../assets/img/nav-sprite.png");
+  background-position: -12px -333px;
+  height: 35px;
+  width: 40px;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--orange-text);
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.cart-container .header-title {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+/* main section */
+.page-container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.black-friday-banner {
+  text-align: center;
+}
+
+.back-links a:link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--gray-link);
+}
+.back-links a:visited {
+  color: var(--gray-link);
+}
+
+.back-links a:hover {
+  color: var(--gray-link);
+  text-decoration: underline;
+}
+
+.link-arrow {
+  margin: 0 0.3rem;
+}
+
+.product-conteiner {
+  margin: 3rem 0;
+  display: flex;
+}
+
+.product-images {
+  display: flex;
+}
+
+.product-images-gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-img {
+  height: 52px;
+  width: 40px;
+  border: 1px solid var(--gray-link);
+  background-size: cover;
+  background-position: center;
+}
+
+.first-img {
+  background-image: url("../assets/img/oculus.jpg");
+}
+
+.second-img {
+  background-image: url("../assets/img/digital_credit.jpg");
+}
+.third-img {
+  background-image: url("../assets/img/advanced.jpg");
+}
+.fourth-img {
+  background-image: url("../assets/img/storage.jpg");
+}
+.fifth-img {
+  background-image: url("../assets/img/new_realities.jpg");
+}
+.sixth-img {
+  background-image: url("../assets/img/included.jpg");
+}
+.seventh-img {
+  background-image: url("../assets/img/oculus.jpg");
+}
+
+.product-images-selected {
+  width: 412px;
+  height: 412px;
+  background-image: url("../assets/img/oculus.jpg");
+  background-size: contain;
+}
+
+.roll-over {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 3rem;
+}
+
+.carousel-container {
+  display: flex;
+}
+/*  Keframes */
+/* @keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(5deg);
+  }
+} */
