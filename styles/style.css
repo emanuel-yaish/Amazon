@@ -27,18 +27,7 @@
   --gray-link: #565959;
   --gray: #565959;
   --dark-red: #b12704;
-
-  /* --background-color: #fbedf9;
-  --red-background: #e34140;
-  --black: #1d1d1f;
-  --white: #f5f5f7;
-  --pink: #fec2eb;
-  --gray: #f5f5f7;
-  --orange: #bf4800;
-  --link-color: #06c;
-  --gray-text: #6e6e73;
-  --footer-link-color: #424245;
-  --light-gray-color: #d2d2d7; */
+  --light-gray-color: #cccccc;
 }
 
 /* CSS Reset */
@@ -56,17 +45,99 @@ html {
 body {
   font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 1.4rem;
-}
-
-header,
-section {
+  line-height: 2rem;
 }
 
 hr {
-  /* border: none;
+  border: none;
   height: 0.1rem;
   background-color: var(--light-gray-color);
-  margin: 1vh 0; */
+  /* margin: 1vh 0; */
+}
+
+.hr-dotted {
+  border: none;
+  height: 0.1rem;
+  border-top: 1 px solid #e7e7e7;
+  margin-bottom: 1.4rem;
+}
+
+/* sprite-icons */
+.logo {
+  background-image: url("../assets/img/nav-sprite.png");
+  height: 29px;
+  width: 96px;
+  background-position: -10px -51px;
+}
+
+.location-icon {
+  background-position: -70px -377px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../assets/img/nav-sprite.png");
+  display: inline-block;
+}
+
+.search-icon {
+  background: url("../assets/img/nav-sprite.png") no-repeat -10px -290px;
+  width: 21px;
+  height: 21px;
+}
+
+.usa-flag-icon {
+  height: 18px;
+  width: 24px;
+  background: url("../assets/img/flags-sprite.png") no-repeat 0 -130px;
+}
+
+.cart-icon {
+  background-image: url("../assets/img/nav-sprite.png");
+  background-position: -12px -333px;
+  height: 35px;
+  width: 40px;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--orange-text);
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  background: url("imgs/nav-sprite.png") no-repeat -172px -255px;
+  width: 18px;
+  height: 14px;
+}
+
+.down-triangle-icon {
+  border-style: solid;
+  border-width: 0.4rem;
+  border-color: transparent;
+  border-top: 0.4rem solid #606060;
+}
+
+.envelope-icon {
+  background: url("imgs/social-sprite.png") no-repeat -256px -221px;
+  width: 19px;
+  height: 15px;
+}
+
+.facebook-icon {
+  background: url("imgs/social-sprite.png") no-repeat -237px -151px;
+  width: 17px;
+  height: 17px;
+}
+
+.twitter-icon {
+  background: url("imgs/social-sprite.png") no-repeat -192px -106px;
+  width: 19px;
+  height: 16px;
+}
+
+.pinterest-icon {
+  background: url("imgs/social-sprite.png") no-repeat -138px -14px;
+  width: 17px;
+  height: 18px;
 }
 
 /* General */
@@ -81,6 +152,11 @@ hr {
   color: var(--dark-red);
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .small-margin {
   margin: 0.5rem 0;
 }
@@ -89,8 +165,12 @@ hr {
   margin: 1rem 0;
 }
 
-.big-margin {
+.large-margin {
   margin: 1.5rem 0;
+}
+
+.big-margin {
+  margin: 3rem 0;
 }
 
 .left-margin {
@@ -207,193 +287,6 @@ hr {
   filter: none;
 } */
 
-/* Header */
-.homepage-header {
-  color: var(--light-text-color);
-}
-
-.homepage-header .main-header {
-  background-color: var(--main-header);
-  height: 60px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.homepage-header .main-nav {
-  background-color: var(--main-nav);
-  height: 40px;
-  display: flex;
-  align-items: center;
-}
-
-.logo-container {
-}
-.logo {
-  background-image: url("../assets/img/nav-sprite.png");
-  height: 29px;
-  width: 96px;
-  background-position: -10px -51px;
-}
-
-.deliver-to-container {
-}
-
-.loaction-icon {
-  background-position: -70px -377px;
-  width: 20px;
-  height: 20px;
-  background-image: url("../assets/img/nav-sprite.png");
-  display: inline-block;
-}
-.header-text-title-container {
-  display: inline-block;
-}
-
-.header-title {
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-
-.header-text {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--gray-text-color);
-}
-
-.header-search-container {
-  /* flex-grow: 1; */
-}
-
-.search-input {
-  width: 80%;
-}
-
-.main-nav a:link {
-  color: var(--light-text-color);
-  /* text-decoration: none;
-  padding: 0 1rem;
-  margin: 0 1rem;
-  display: inline-block; */
-}
-
-.homepage-header .main-header,
-.homepage-header .main-nav {
-  /* display: flex; */
-}
-
-.header-departments {
-  display: inline-block;
-  max-width: max-content;
-}
-
-.cart-icon {
-  background-image: url("../assets/img/nav-sprite.png");
-  background-position: -12px -333px;
-  height: 35px;
-  width: 40px;
-  text-align: center;
-  font-size: 1.7rem;
-  font-weight: 700;
-  color: var(--orange-text);
-  vertical-align: middle;
-  display: inline-block;
-}
-
-.cart-container .header-title {
-  display: inline-block;
-  vertical-align: bottom;
-}
-
-/* main section */
-.page-container {
-  max-width: 1500px;
-  margin: 0 auto;
-}
-.black-friday-banner {
-  text-align: center;
-}
-
-.back-links a:link {
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: var(--gray-link);
-}
-.back-links a:visited {
-  color: var(--gray-link);
-}
-
-.back-links a:hover {
-  color: var(--gray-link);
-  text-decoration: underline;
-}
-
-.link-arrow {
-  margin: 0 0.3rem;
-}
-
-.product-conteiner {
-  margin: 3rem 0;
-  display: flex;
-}
-
-.product-images {
-  display: flex;
-}
-
-.product-images-gallery {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.product-img {
-  height: 52px;
-  width: 40px;
-  border: 1px solid var(--gray-link);
-  background-size: cover;
-  background-position: center;
-}
-
-.first-img {
-  background-image: url("../assets/img/oculus.jpg");
-}
-
-.second-img {
-  background-image: url("../assets/img/digital_credit.jpg");
-}
-.third-img {
-  background-image: url("../assets/img/advanced.jpg");
-}
-.fourth-img {
-  background-image: url("../assets/img/storage.jpg");
-}
-.fifth-img {
-  background-image: url("../assets/img/new_realities.jpg");
-}
-.sixth-img {
-  background-image: url("../assets/img/included.jpg");
-}
-.seventh-img {
-  background-image: url("../assets/img/oculus.jpg");
-}
-
-.product-images-selected {
-  width: 412px;
-  height: 412px;
-  background-image: url("../assets/img/oculus.jpg");
-  background-size: contain;
-}
-
-.roll-over {
-  text-align: center;
-  font-size: 1.4rem;
-  margin-top: 3rem;
-}
-
-.carousel-container {
-  display: flex;
-}
 /*  Keframes */
 /* @keyframes rotation {
   from {

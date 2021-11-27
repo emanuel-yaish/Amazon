@@ -8,6 +8,9 @@
     <link rel="icon" href="assets/img/amazon_icon.png">
     <title>Amazon.com: Oculus Quest 2 — Advanced All-In-One Virtual Reality Headset — 256 GB : Video Games</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/more_items.css">
     <script src="scripts/index.js" defer></script>
 </head>
 
@@ -20,33 +23,39 @@
                 </a>
             </div>
             <div class="deliver-to-container">
-                <div class="loaction-icon"></div>
+                <div class="location-icon"></div>
                 <div class="header-text-title-container">
                     <p class="header-text">Deliver to Emanuel</p>
                     <h4 class="header-title">Rehovot 76</h4>
                 </div>
             </div>
             <div class="header-search-container">
-                <select class="header-departments">
-                    <option value="all">All</option>
-                    <option value="all-departments">All Departments</option>
-                    <option value="arts-crafts">Arts & Crafts</option>
-                    <option value="automotive">Automotive</option>
-                    <option value="baby">Baby</option>
-                </select>
-                <input class="search-input" type="text" placeholder="oculus quest 2">
-                <input type="submit">
+                <div class="header-departments-container">
+                    <select class="header-departments">
+                        <option value="all">All</option>
+                        <option value="all-departments">All Departments</option>
+                        <option value="arts-crafts">Arts & Crafts</option>
+                        <option value="automotive">Automotive</option>
+                        <option value="baby">Baby</option>
+                    </select>
+                </div>
+                <div class="search-input-container">
+                    <input class="search-input" type="text" placeholder="oculus quest 2">
+                </div>
+                <div class="search-icon-container">
+                    <input type="button" class="search-icon">
+                </div>
             </div>
             <div class="languages-container">
-                <div class="usa-flag"></div>
+                <div class="usa-flag-icon"></div>
             </div>
             <div class="account-container">
-                <p class="header-text">Returns</p>
-                <h4 class="header-title">& Orders</h4>
-            </div>
-            <div class="returns-container">
                 <p class="header-text">Hello, Emanuel</p>
                 <h4 class="header-title">Account & Lists &#9660</h4>
+            </div>
+            <div class="returns-container">
+                <p class="header-text">Returns</p>
+                <h4 class="header-title">& Orders</h4>
             </div>
             <div class="cart-container">
                 <div class="cart-icon"><span class="cart-value">0</span></div>
@@ -145,7 +154,7 @@
                         <input type="button" value="Streamer Bundle">
                     </div>
                 </div>
-                <div class="product-description-list">
+                <div class="product-description-list large-margin">
                     <ul>
                         <li>
                             <p>Buy an Oculus Quest 2 by Nov. 29, 2021 and receive $50 digital credit towards future
@@ -199,14 +208,33 @@
                     <a class="share-by-twitter"></a>
                     <a class="share-by-pinterest"></a>
                 </div>
-                <div>
-
+                <div class="delivery-container">
+                    <p>This item ships to Israel. Arrives: Wednesday, Dec 29</p>
+                    <p><a><span class="location-icon"></span> Deliver to Emanuel - Rehovot 76‌</a></p>
+                    <div class="button-container flex-column">
+                        <input type="button" value="Add to Cart">
+                        <input type="button" value="Buy Now">
+                    </div>
+                    <p><a><span class="lock-icon"></span> Secure transaction</a></p>
+                    <p>Return policy: <a>Returnable until Jan 31, 2022 <span class="arrow-down"></span></a></p>
+                    <p>Support: <a>Free Amazon product support included <span class="arrow-down"></span></a></p>
+                    <p><input type="checkbox">Add a gift receipt for easy returns</p>
+                    <hr>
+                    <hr>
+                    <div>
+                        <input type="button" value="Add to List">
+                    </div>
                 </div>
                 <div class="delivery-new-used">
-                    <div>
-                        <p></p>
-                        <p>from <span class="dark-red">$399.00</span></p>
-                    </div>
+                    <a href="#">
+                        <div>
+                            <p>New & Used (12)</p>
+                            <p>from <span class="dark-red">$399.00</span></p>
+                        </div>
+                        <div>
+                            <span> &#62; </span>
+                        </div>
+                    </a>
                 </div>
             </section>
         </main>
@@ -222,7 +250,68 @@
             </div>
             <div class="carousel-container">
                 <input class="prev-item" type="button" value="&#60;">
-                <div class="carousel"></div>
+                <div class="carousel">
+                    <div class="carousel-item item-1">
+                        <img src="assets/img/oculus_case.jpg" alt="oculus carrying case">
+                        <p><a>Oculus Quest 2 Carrying Case for Lightweight, Portable Protection - VR</a></p>
+                        <p><span class="for-five-stars"></span> 7,808</p>
+                        <p><span class="dollar-sign">49.00</span></p>
+                    </div>
+                    <div class="carousel-item item-2">
+                        <img src="assets/img/oculus_case.jpg" alt="oculus carrying case">
+                        <p><a>Oculus Quest 2 Carrying Case for Lightweight, Portable Protection - VR</a></p>
+                        <p><span class="for-five-stars"></span> 7,808</p>
+                        <p><span class="dollar-sign">49.00</span></p>
+                    </div>
+                    <div class="carousel-item item-3">
+                        <img src="assets/img/oculus_case.jpg" alt="oculus carrying case">
+                        <p><a>Oculus Quest 2 Carrying Case for Lightweight, Portable Protection - VR</a></p>
+                        <p><span class="for-five-stars"></span> 7,808</p>
+                        <p><span class="dollar-sign">49.00</span></p>
+                    </div>
+                    <div class="carousel-item item-4">
+                        <img src="assets/img/oculus_case.jpg" alt="oculus carrying case">
+                        <p><a>Oculus Quest 2 Carrying Case for Lightweight, Portable Protection - VR</a></p>
+                        <p><span class="for-five-stars"></span> 7,808</p>
+                        <p><span class="dollar-sign">49.00</span></p>
+                    </div>
+                    <div class="carousel-item item-5">
+                        <img src="assets/img/oculus_case.jpg" alt="oculus carrying case">
+                        <p><a>Oculus Quest 2 Carrying Case for Lightweight, Portable Protection - VR</a></p>
+                        <p><span class="for-five-stars"></span> 7,808</p>
+                        <p><span class="dollar-sign">49.00</span></p>
+                    </div>
+                    <div class="carousel-item item-6">
+                        <img src="assets/img/oculus_case.jpg" alt="oculus carrying case">
+                        <p><a>Oculus Quest 2 Carrying Case for Lightweight, Portable Protection - VR</a></p>
+                        <p><span class="for-five-stars"></span> 7,808</p>
+                        <p><span class="dollar-sign">49.00</span></p>
+                    </div>
+                    <div class="carousel-item item-7">
+                        <img src="assets/img/oculus_case.jpg" alt="oculus carrying case">
+                        <p><a>Oculus Quest 2 Carrying Case for Lightweight, Portable Protection - VR</a></p>
+                        <p><span class="for-five-stars"></span> 7,808</p>
+                        <p><span class="dollar-sign">49.00</span></p>
+                    </div>
+                    <div class="carousel-item item-8">
+                        <img src="assets/img/oculus_case.jpg" alt="oculus carrying case">
+                        <p><a>Oculus Quest 2 Carrying Case for Lightweight, Portable Protection - VR</a></p>
+                        <p><span class="for-five-stars"></span> 7,808</p>
+                        <p><span class="dollar-sign">49.00</span></p>
+                    </div>
+                    <div class="carousel-item item-9">
+                        <img src="assets/img/oculus_case.jpg" alt="oculus carrying case">
+                        <p><a>Oculus Quest 2 Carrying Case for Lightweight, Portable Protection - VR</a></p>
+                        <p><span class="for-five-stars"></span> 7,808</p>
+                        <p><span class="dollar-sign">49.00</span></p>
+                    </div>
+                    <div class="carousel-item item-10">
+                        <img src="assets/img/oculus_case.jpg" alt="oculus carrying case">
+                        <p><a>Oculus Quest 2 Carrying Case for Lightweight, Portable Protection - VR</a></p>
+                        <p><span class="for-five-stars"></span> 7,808</p>
+                        <p><span class="dollar-sign">49.00</span></p>
+                    </div>
+                </div>
                 <input class="next-item" type="button" value="&#62;">
             </div>
         </section>
