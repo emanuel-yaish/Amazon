@@ -33,6 +33,7 @@
   --yellow: #ffd814;
   --light-orange: #febd69;
   --dark-orange: #f3a847;
+  --title-orange: #cc6600;
   --gray-link: #565959;
   --gray: #565959;
   --dark-red: #b12704;
@@ -126,6 +127,19 @@ hr {
 
 .right-arrow-icon {
   background: url("../assets/img/icons-sprite.png") no-repeat -7px -36px;
+  width: 8px;
+  height: 13px;
+  display: inline-block;
+}
+
+.open-left-arrow-icon {
+  background: url("../assets/img/icons-sprite.png") no-repeat -124px -8px;
+  width: 9px;
+  height: 13px;
+  display: inline-block;
+}
+.open-right-arrow-icon {
+  background: url("../assets/img/icons-sprite.png") no-repeat -107px -8px;
   width: 8px;
   height: 13px;
   display: inline-block;
@@ -239,6 +253,9 @@ hr {
   color: var(--dark-red);
 }
 
+.orange-title {
+  color: var(--title-orange);
+}
 .orange-background {
   background-color: var(--orange);
 }

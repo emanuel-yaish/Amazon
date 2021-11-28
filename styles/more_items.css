@@ -1,7 +1,60 @@
+.more-items a:link {
+  color: var(--green);
+  text-decoration: none;
+}
+.more-items a:visited {
+  color: var(--green);
+}
+
 .carousel-container {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.more-items-title {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-5 {
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 .carousel {
   display: flex;
+  /* margin: 0 3rem; */
+}
+
+.carousel-item {
+  max-width: 160px;
+  margin-left: 2rem;
+}
+
+.prev-item,
+.next-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 1rem;
+  border: 1px solid var(--gray-text-color);
+  box-shadow: 0 0 3px 2px rgb(213 217 217 / 50%);
+}
+
+.prev-item:hover,
+.next-item:hover {
+  background-color: rgb(213 217 217 / 15%);
+}
+
+.dollar-sign {
+  font-size: 1.1rem;
+  vertical-align: text-top;
+}
+
+.more-item-price {
+  font-size: 1.7rem;
 }
