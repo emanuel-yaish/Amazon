@@ -24,9 +24,3 @@ const moreItemsArr = [
     price: "49.00",
   },
 ];
-
-// const carousel = document.querySelector(".carousel");
-// moreItemsArr.map(
-//   (item) => ` <
-// `
-// );

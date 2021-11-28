@@ -1,6 +1,12 @@
 /* Fonts */
 @font-face {
   font-family: "Amazon Ember";
+  font-weight: 200;
+  src: url(../assets/fonts/Dv1WQ5DdeMS5qP7.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Amazon Ember";
   font-weight: 400;
   src: url(../assets/fonts/pDxWAF1pBB0dzGB.woff2) format("woff2");
 }
@@ -14,20 +20,23 @@
 @font-face {
   font-family: "Amazon Ember";
   font-weight: 700;
-  src: url(../assets/fonts/Dv1WQ5DdeMS5qP7.woff2) format("woff2");
+  src: url(../assets/fonts/KFPk-9IF4FqAqY-.woff2) format("woff2");
 }
 /* Colors */
 
 :root {
   --main-header: #0f1111;
-  --main-nav: #232f3e;
+  --dark-blue: #232f3e;
   --light-text-color: #ffffff;
   --gray-text-color: #cccccc;
-  --orange-text: #f08804;
+  --orange: #f08804;
+  --light-orange: #febd69;
+  --dark-orange: #f3a847;
   --gray-link: #565959;
   --gray: #565959;
   --dark-red: #b12704;
-  --light-gray-color: #cccccc;
+  --light-gray-color: #f3f3f3;
+  --green: #007185;
 }
 
 /* CSS Reset */
@@ -46,6 +55,10 @@ body {
   font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 2rem;
+}
+
+select {
+  font-family: "Amazon Ember", Arial, sans-serif;
 }
 
 hr {
@@ -79,15 +92,35 @@ hr {
 }
 
 .search-icon {
-  background: url("../assets/img/nav-sprite.png") no-repeat -10px -290px;
-  width: 21px;
-  height: 21px;
+  background: url("../assets/img/nav-sprite.png") no-repeat -5px -285px;
+  width: 30px;
+  height: 30px;
 }
 
 .usa-flag-icon {
   height: 18px;
   width: 24px;
   background: url("../assets/img/flags-sprite.png") no-repeat 0 -130px;
+  display: inline-block;
+}
+
+.arrow-down-icon {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin: 0.2rem 0.1rem;
+  border-left: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  border-top: 0.4rem solid var(--gray-text-color);
+}
+
+.arrow-open-down-icon {
+  background: url("../assets/img/icons-sprite.png") no-repeat -366px -88px;
+  width: 7px;
+  height: 4px;
+  display: inline-block;
+  vertical-align: 20%;
+  margin: 0 1rem;
 }
 
 .cart-icon {
@@ -98,13 +131,14 @@ hr {
   text-align: center;
   font-size: 1.7rem;
   font-weight: 700;
-  color: var(--orange-text);
+  color: var(--orange);
   vertical-align: middle;
   display: inline-block;
 }
 
 .hamburger-icon {
-  background: url("imgs/nav-sprite.png") no-repeat -172px -255px;
+  background: url("../assets/img/nav-sprite.png") no-repeat -172px -255px;
+  display: inline-block;
   width: 18px;
   height: 14px;
 }
@@ -117,32 +151,62 @@ hr {
 }
 
 .envelope-icon {
-  background: url("imgs/social-sprite.png") no-repeat -256px -221px;
+  background: url("../assets/img/social-sprite.png") no-repeat -256px -221px;
   width: 19px;
   height: 15px;
+  display: inline-block;
 }
 
 .facebook-icon {
-  background: url("imgs/social-sprite.png") no-repeat -237px -151px;
+  background: url("../assets/img/social-sprite.png") no-repeat -237px -151px;
   width: 17px;
   height: 17px;
+  display: inline-block;
 }
 
 .twitter-icon {
-  background: url("imgs/social-sprite.png") no-repeat -192px -106px;
+  background: url("../assets/img/social-sprite.png") no-repeat -192px -106px;
   width: 19px;
   height: 16px;
+  display: inline-block;
 }
 
 .pinterest-icon {
-  background: url("imgs/social-sprite.png") no-repeat -138px -14px;
+  background: url("../assets/img/social-sprite.png") no-repeat -138px -14px;
   width: 17px;
   height: 18px;
+  display: inline-block;
+}
+
+/* stars */
+.four-five-stars {
+  background: url("../assets/img/stars-sprite.png") no-repeat -390px -206px;
+  width: 95px;
+  height: 18px;
+  display: inline-block;
+}
+
+/* buttons */
+.ghost-btn {
+  background-color: transparent;
+  border: 0.1rem solid var(--gray-text-color);
+  padding: 0.7rem 1.2rem;
+  font-size: 1.3rem;
+}
+
+.active {
+  border: 0.1rem solid var(--orange);
+  background-color: rgb(231 118 0 / 10%);
+  font-weight: 700;
 }
 
 /* General */
 .orange {
-  color: var(--orange-text);
+  color: var(--orange);
+}
+
+.white {
+  color: #ffffff;
 }
 
 .gray {
@@ -175,6 +239,10 @@ hr {
 
 .left-margin {
   margin-left: 5rem;
+}
+
+.strong {
+  font-weight: 700;
 }
 
 /* Headers */
@@ -247,21 +315,6 @@ hr {
   display: flex;
   justify-content: center;
 } */
-
-/* unvisited link */
-.main-nav a:link {
-  color: var(--light-text-color);
-  text-decoration: none;
-  padding: 0 1rem;
-  margin: 0 1rem;
-  font-size: 1.4rem;
-  display: inline-block;
-}
-
-/* visited link */
-.main-nav a:visited {
-  color: var(--light-text-color);
-}
 
 /* mouse over link */
 /* .main-nav a:hover {
