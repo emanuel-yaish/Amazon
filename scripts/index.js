@@ -167,3 +167,21 @@ prevItemsBtn.addEventListener("click", () => {
     currentPage.textContent = "Page 1 of 2";
   }
 });
+
+const imgUrlArr = [
+  "../assets/img/oculus.jpg",
+  "../assets/img/digital_credit.jpg",
+  "../assets/img/advanced.jpg",
+  "../assets/img/storage.jpg",
+  "../assets/img/new_realities.jpg",
+  "../assets/img/included.jpg",
+  "../assets/img/oculus_video_img.jpg",
+];
+const productImgArr = document.querySelectorAll(".product-img");
+const selctedProductImg = document.querySelector(".product-images-selected");
+
+productImgArr.forEach((prudctImg, index) => {
+  prudctImg.addEventListener("mouseover", () => {
+    selctedProductImg.style.background = `top / contain no-repeat url(${imgUrlArr[index]})`;
+  });
+});
