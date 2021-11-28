@@ -164,4 +164,42 @@
   border: 0.1rem solid var(--gray-text-color);
   padding: 1.4rem 1.8rem;
   border-radius: 0.8rem;
+  max-width: 242px;
+  margin-left: 5rem;
+}
+
+.delivery-container .location-icon {
+  -webkit-filter: brightness(0); /* Safari 6.0 - 9.0 */
+  filter: brightness(0);
+}
+
+.deliver-to {
+  font-size: 1.2rem;
+}
+
+.gift-checkbox {
+  margin-right: 0.5rem;
+}
+
+.delivery-new-used {
+  border: 0.1rem solid var(--gray-text-color);
+  padding: 1.4rem 1.8rem;
+  border-radius: 0.8rem;
+  max-width: 242px;
+  margin-left: 5rem;
+  margin-top: 3rem;
+}
+
+.delivery-new-used-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delivery-new-used a:link {
+  color: #000000;
+}
+
+.delivery-new-used a:visited {
+  color: #000000;
 }

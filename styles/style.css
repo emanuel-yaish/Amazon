@@ -30,6 +30,7 @@
   --light-text-color: #ffffff;
   --gray-text-color: #cccccc;
   --orange: #f08804;
+  --yellow: #ffd814;
   --light-orange: #febd69;
   --dark-orange: #f3a847;
   --gray-link: #565959;
@@ -123,6 +124,13 @@ hr {
   margin: 0 1rem;
 }
 
+.right-arrow-icon {
+  background: url("../assets/img/icons-sprite.png") no-repeat -7px -36px;
+  width: 8px;
+  height: 13px;
+  display: inline-block;
+}
+
 .cart-icon {
   background-image: url("../assets/img/nav-sprite.png");
   background-position: -12px -333px;
@@ -178,6 +186,14 @@ hr {
   display: inline-block;
 }
 
+.lock-icon {
+  background: url("../assets/img/lock-icon.png") no-repeat;
+  width: 15px;
+  height: 18px;
+  display: inline-block;
+  margin: 0.1rem;
+}
+
 /* stars */
 .four-five-stars {
   background: url("../assets/img/stars-sprite.png") no-repeat -390px -206px;
@@ -192,6 +208,13 @@ hr {
   border: 0.1rem solid var(--gray-text-color);
   padding: 0.7rem 1.2rem;
   font-size: 1.3rem;
+}
+
+.round-btn {
+  font-size: 1.4rem;
+  border-radius: 2rem;
+  border: none;
+  padding: 0.7rem 1.2rem;
 }
 
 .active {
@@ -214,6 +237,14 @@ hr {
 }
 .dark-red {
   color: var(--dark-red);
+}
+
+.orange-background {
+  background-color: var(--orange);
+}
+
+.yellow-background {
+  background-color: var(--yellow);
 }
 
 .flex-column {

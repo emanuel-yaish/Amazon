@@ -1,3 +1,5 @@
+let cartItems = 0;
+
 const moreItemsArr = [
   {
     img: "../assets/assets/img/oculus_case.jpg",
@@ -24,3 +26,11 @@ const moreItemsArr = [
     price: "49.00",
   },
 ];
+
+const cartBtn = document.querySelector(".add-to-cart");
+const cartValue = document.querySelector(".cart-value");
+
+cartBtn.addEventListener("click", () => {
+  cartItems++;
+  cartValue.textContent = cartItems;
+});
